@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!--Meta-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <!--Bootstrap CSS-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
         <!--Google Fonts-->
@@ -9,76 +12,77 @@
         <link rel="stylesheet" href="index.css">
         <title>Portfolio: A Requiem</title>
     </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="100">
         <!--Navbar-->
         <nav class="fixed-top navbar container-flex flex-row bg-dark text-light">
             <div class="d-inline-block border-left border-right border-light">
-                <span class="navbar-brand h1 pl-3">KD Web Dev</span>
+                <span href="#home" class="navbar-brand h1 pl-3">KD Web Dev</span>
             </div>
-                <div class="dropdown flex-grow-0 ml-2">
-                    <button class="btn dropdown-toggle float-left btn-lg btn-outline-secondary text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownProjects">
-                            <a class="dropdown-item" id="survey" href="https://kordldurham.github.io/surveyportfolio/" target="_blank">Survey</a>
-                            <a class="dropdown-item" id="shuckle" href="https://kordldurham.github.io/redesigned-doodle/" target="_blank">Wiki Entry</a>
-                            <a class="dropdown-item" id="clock" href="https://kordldurham.github.io/impractical_clock/" target="_blank">Impractical Clock</a>
-                            <a class="dropdown-item" id="wednesday" href="https://kordldurham.github.io/SparkyArcingPotato/" target="_blank">Wednesday</a>
+                <div class="dropdown flex-grow-0 ml-2" data-target="#projects">
+                    <button class="btn dropdown-toggle float-left btn-lg btn-outline-secondary text-light" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</button>
+                        <div class="dropdown-menu bg-dark" href="#ddprojects" aria-labelledby="ddprojects">
+                            <a class="dropdown-item text-light" id="wednesday" href="https://kordldurham.github.io/SparkyArcingPotato/" target="_blank">Landing Page</a>
+                            <a class="dropdown-item text-light" id="wiki" href="https://kordldurham.github.io/redesigned-doodle/" target="_blank">Wiki</a>
+                            <a class="dropdown-item text-light" id="clock" href="https://kordldurham.github.io/impractical_clock/" target="_blank">Clock</a>
+                            <a class="dropdown-item text-light" id="survey" href="https://kordldurham.github.io/surveyportfolio/" target="_blank">Survey</a>
+                            <a class="dropdown-item text-light" id="directory" href="https://kordldurham.github.io/special-adventure/" target="_blank">Directory</a>
                         </div>
                 </div>
-                <div class="dropdown flex-grow-0 ml-2">
-                    <button class="btn dropdown-toggle btn-lg btn-outline-secondary text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Certifications</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownCerts">
-                            <a class="dropdown-item" href="https://www.freecodecamp.org/certification/kordldurham/responsive-web-design" target="_blank">Responsive Web Design</a>
-                            <a class="dropdown-item style=color:grey"  href="#"><s>Front End Development</s></a>
+                <div class="dropdown flex-grow-1 ml-2" data-target="#certifications">
+                    <button class="btn dropdown-toggle btn-lg btn-outline-secondary text-light" type="button" data-toggle="dropdown" id="certifications" aria-haspopup="true" aria-expanded="false">Certifications</button>
+                        <div class="dropdown-menu bg-dark text-light" href="#certifications" aria-labelledby="dropdownCerts">
+                            <a class="dropdown-item text-light" href="https://www.freecodecamp.org/certification/kordldurham/responsive-web-design" target="_blank">Responsive Web Design</a>
+                            <a class="dropdown-item text-light style=color:grey"  href="#"><s>Front End Development</s></a>
                         </div>
                 </div>
-                <div class="dropdown flex-grow-1 ml-2">
-                    <button class="btn dropdown-toggle btn-lg btn-outline-secondary text-light" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownContact">
-                            <a class="dropdown-item" id="gitHubLink" href="https://github.com/kordldurham" target="_blank">GitHub</a>
-                            <a class="dropdown-item" id="emailLink" href="mail:devkorddurham@gmail.com" target="_blank">Email</a>
-                            <a class="dropdown-item" id="redditLink" href="https://www.reddit.com/user/SparkyArcingPotato" target="_blank">Reddit</a>
-                            <a class="dropdown-item" id="paypalLink"  href="https://paypal.me/SparkyArcingPotato?locale.x=en_US" target="_blank">Donations</a>
+                <div class="dropdown flex-grow ml-2 float-right" data-target="#contact">
+                    <button class="btn dropdown-toggle btn-lg btn-outline-secondary text-light pull-left" type="button" id="contact" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Contact</button>
+                        <div class="dropdown-menu bg-dark text-light" href="#contact" aria-labelledby="dropdownContact">
+                            <a class="dropdown-item text-light" id="gitHubLink" href="https://github.com/kordldurham" target="_blank">GitHub</a>
+                            <a class="dropdown-item text-light" id="emailLink" href="mail:devkorddurham@gmail.com" target="_blank">Email</a>
+                            <a class="dropdown-item text-light" id="redditLink" href="https://www.reddit.com/user/SparkyArcingPotato" target="_blank">Reddit</a>
+                            <a class="dropdown-item text-light" id="paypalLink"  href="https://paypal.me/SparkyArcingPotato?locale.x=en_US" target="_blank">Donations</a>
                         </div>
                 </div>
             </div>
         </nav>
-    <body>
         <div class="wrapper">
         <!--Jumbotron-->
-        <div class="jumbotron text-center">
-            <h2 class="display-3 pt-4">My name is Kord Durham</h2>
+        <div class="welcome jumbotron text-center border-bottom border-white">
+            <h2 class="display-3 pt-4" style="font-color:#444">My name is Kord Durham</h2>
             <h4 class="text-body pt-2">I am a web developer; this is my portfolio.</h4>
             <h4 class="text-body pb-2">Contained within are links to various projects I am working on. Enjoy!</h4>
         </div>
         <!--Project Cards-->
         <div class="container card-group py-3 px-auto">
             <div class="card-img border border-dark mx-auto text-center" style="width:31.25%;">
-                <div class="mb-n3 border-bottom border-dark card-header font-weight-bold">
+                <div class="mb-n3 border-bottom border-dark card-header font-weight-bold" style="background-color: #aaa">
                     <p>A Brief Insight Into Wednesdays</p>
                 </div>
                 <a class="card-link" href="https://kordldurham.github.io/SparkyArcingPotato/" target:"_blank">
-                    <img class="border-white img-thumbnail" src="wednesday.jpg" alt="A brief insight into Wednesdays"></a>
+                    <img id="thumb" class="border-white img-thumbnail" src="img/wednesday.jpg" alt="A brief insight into Wednesdays"></a>
                 <div class="card-body">
                     <p class="card-text">A short landing page to showcase HTML and CSS.</p>
-                    <p class="card-subtitle">My first project, features a styled form and a JS code to determine a boolean value.</p>
+                    <p class="card-subtitle">My first project, features a styled form and a JS code displaying an alert based on a boolean value.</p>
                 </div>
             </div>
             <div class="card-img border border-dark mx-auto text-center" style="width:31.25%;">
-                <div class="mb-n3 card-header font-weight-bold">
+                <div class="mb-n3 card-header font-weight-bold"style="background-color: #aaa">
                     <p>Shuckle: Enigmatic Wonder</p>
                 </div>
                 <a class="card-link" href="https://kordldurham.github.io/redesigned-doodle/" target="_blank">
-                    <img class="border-white img-thumbnail p-2" src="shuckle.jpg" alt="Shuckle: Enigmatic Wonder"></a>
-                <div class="card-body rounded">
-                    <p class="card-text">A sample wiki page showcasing HTML, CSS, and reactive JS.</p>
-                    <p class="card-subtitle">Features multiple reactive images, links, and sidenav all presented in a wiki-esque format. Formatted for accessibility and multiple device sizes.</p>
+                    <img id="thumb" class="border-white img-thumbnail p-2" src="img/shuckle.jpg" alt="Shuckle: Enigmatic Wonder"></a>
+                <div class="card-body">
+                    <p class="card-text">A page showcasing HTML, CSS, and reactive JS in a Wiki-esque format.</p>
+                    <p class="card-subtitle">Features multiple reactive images, links, and sidenav. Formatted for accessibility and multiple device sizes.</p>
                 </div>
             </div>
             <div class="card-img border border-dark mx-auto text-center" style="width:31.25%;">
-                <div class="mb-n3 card-header font-weight-bold">
+                <div class="mb-n3 card-header font-weight-bold"style="background-color: #aaa">
                 <p>The World's Most Impractical Clock</p>
                 </div>
                 <a class="card-link" href="https://kordldurham.github.io/impractical_clock/" target="_blank">
-                    <img class="border-white rounded img-thumbnail p-2" src="clock.jpg" alt="The World's Most Impractical Clock"></a>
+                    <img id="thumb" class="border-white img-thumbnail p-2" src="img/clock.jpg" alt="The World's Most Impractical Clock"></a>
                 <div class="card-body">
                     <p class="card-text">A sample page using minimal HTML and CSS showcasing basic behind-the-scenes JS.</p>
                     <p class="card-subtitle">Displays a date, time, and randomly generated number using parsed intergers from the datetime.</p>
@@ -86,38 +90,38 @@
             </div>
         </div>
         <!--Project Cards deux-->
-        <div class="container card-group py-3 px-auto">
+        <div id="ddprojects" class="container card-group py-3 px-auto">
             <div class="card-img border border-dark mx-auto text-center" style="width:31.25%;">
-                <div class="mb-n3 border-bottom border-dark card-header font-weight-bold">
-                    <p>...</p>
+                <div class="mb-n3 card-header font-weight-bold" style="background-color: #aaa">
+                <p>Customer Satisfaction Survey</p>
                 </div>
-                <a class="card-link" href="..." target:"_blank">
-                    <img class="border-white img-thumbnail" src="" alt="A brief insight into Wednesdays"></a>
+                <a class="card-link" href="kordldurham.github.io/surveyportfolio/" target="_blank">
+                    <img id="thumb" class="border-white img-thumbnail p-2" src="img/survey.jpg" alt="Customer Satisfaction Survey"></a>
                 <div class="card-body">
-                    <p class="card-text">A short landing page to showcase HTML and CSS.</p>
-                    <p class="card-subtitle">My first project, features a styled form and a JS code to determine a boolean value.</p>
+                    <p class="card-text">A page containing CSS styled HTML forms in a survey format.</p>
+                    <p class="card-subtitle">Contains text, textarea, radio, checkbox, and dropdown inputs all with custom styling.</p>
                 </div>
             </div>
             <div class="card-img border border-dark mx-auto text-center" style="width:31.25%;">
-                <div class="mb-n3 card-header font-weight-bold">
-                    <p>Shuckle: Enigmatic Wonder</p>
+                <div class="mb-n3 card-header font-weight-bold" style="background-color: #aaa">
+                <p>Pet Directory; A Memorandum</p>
                 </div>
-                <a class="card-link" href="https://kordldurham.github.io/redesigned-doodle/" target="_blank">
-                    <img class="border-white img-thumbnail p-2" src="img/shuckle.svg" alt="Shuckle: Enigmatic Wonder"></a>
-                <div class="card-body rounded">
-                    <p class="card-text">A sample wiki page showcasing HTML, CSS, and reactive JS.</p>
-                    <p class="card-subtitle">Features multiple reactive images, links, and sidenav all presented in a wiki-esque format. Formatted for accessibility and multiple device sizes.</p>
+                <a class="card-link" href="https://kordldurham.github.io/special-adventure/" target="_blank">
+                    <img id="thumb" class="border-white img-thumbnail p-2" src="img/pet_directory.jpg" alt="Pet Directory; A Memorandum"></a>
+                <div class="card-body">
+                    <p class="card-text">A page using minimal HTML and CSS, focused on using JS; in a directory format.</p>
+                    <p class="card-subtitle">Uses code to populate the empty body of the page based on the contents of a array contained in the JS file.</p>
                 </div>
             </div>
             <div class="card-img border border-dark mx-auto text-center" style="width:31.25%;">
-                <div class="mb-n3 card-header font-weight-bold">
-                <p>The World's Most Impractical Clock</p>
+                <div class="mb-n3 card-header font-weight-bold" style="background-color: #aaa">
+                <p>...</p>
                 </div>
-                <a class="card-link" href="https://kordldurham.github.io/impractical_clock/" target="_blank">
-                    <img class="border-white rounded img-thumbnail p-2" src="img/clock.svg" alt="The World's Most Impractical Clock"></a>
+                <a class="card-link" href="..." target="_blank">
+                    <img id="thumb" class="border-white img-thumbnail p-2" src="..." alt="..."></a>
                 <div class="card-body">
-                    <p class="card-text">A sample page using minimal HTML and CSS showcasing basic behind-the-scenes JS.</p>
-                    <p class="card-subtitle">Displays a date, time, and randomly generated number using parsed intergers from the datetime.</p>
+                    <p class="card-text">...</p>
+                    <p class="card-subtitle">...</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,80 @@
+.welcome {
+    background: linear-gradient(#000, #111, #333, #555, #777, #999, #aaa, #bbb, #ccc, #ddd, #eee, #fff)
+}
+
+.dropdown-item:hover {
+    background-color: #666;
+}
+
+#thumb:hover {
+    animation-name: grow;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(100%);
+    }
+    5% {
+        transform: scale(100.5%);
+    }
+    10% {
+        transform: scale(101%);
+    }
+    15% {
+        transform: scale(101.5%);
+    }
+    20% {
+        transform: scale(102%);
+    }
+    25% {
+        transform: scale(102.5%);
+    }
+    30% {
+        transform: scale(103%);
+    }
+    35% {
+        transform: scale(103.5%);
+    }
+    40% {
+        transform: scale(104%);
+    }
+    45% {
+        transform: scale(104.5%);
+    }
+    50% {
+        transform: scale(105%);
+    }
+    55% {
+        transform: scale(105.5%);
+    }
+    60% {
+        transform: scale(106%);
+    }
+    65% {
+        transform: scale(106.5%);
+    }
+    70% {
+        transform: scale(107%);
+    }
+    75% {
+        transform: scale(107.5%);
+    }
+    80% {
+        transform: scale(108%);
+    }
+    85% {
+        transform: scale(108.5%);
+    }
+    90% {
+        transform: scale(109%);
+    }
+    95% {
+        transform: scale(109.5%);
+    }
+    100% {
+        transform: scale(110%);
+    }
+}
