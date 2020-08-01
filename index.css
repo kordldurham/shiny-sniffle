@@ -2,6 +2,10 @@
     background: linear-gradient(#000, #111, #333, #555, #777, #999, #aaa, #bbb, #ccc, #ddd, #eee, #fff)
 }
 
+footer {
+    background: linear-gradient(#fff, #eee, #ddd, #ccc, #bbb, #aaa, #999, #777, #555, #333, #111, #000)
+}
+
 .dropdown-item:hover {
     background-color: #666;
 }
@@ -76,5 +80,17 @@
     }
     100% {
         transform: scale(110%);
+    }
+}
+
+@media(min-width: 1024px) {
+    .med {
+        width: 31.25%;
+    }
+}
+
+@media(max-width: 1024px) {
+    .med {
+        width: 100%;
     }
 }
